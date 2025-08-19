@@ -84,7 +84,7 @@ Deposit(String pin){
                 JOptionPane.showMessageDialog(null,"Please enter a Amount you wan't to Deposit");
             }else {
                 Con c=new Con();
-                c.statement.executeUpdate("insert into bank values('"+pin+"','"+date+"', 'Deposit  ','"+amount+"')");
+               c.statement.executeUpdate("insert into bank values('" + pin + "','" + date + "','Deposit','" + amount + "')");
                 JOptionPane.showMessageDialog(null,"Rs. "+amount+" Deposited Successfully");
                 setVisible(false);
                 new main_Class(pin);
@@ -105,3 +105,4 @@ Deposit(String pin){
 
     }
 }
+
